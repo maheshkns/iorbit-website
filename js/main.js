@@ -90,20 +90,18 @@ $(document).ready(function () {
         $("#burger_button").trigger("click");
     });
     
-    if ( $( "#menu_trigger" ).length ) {
-        var waypoint = new Waypoint({
-            element: document.getElementById('menu_trigger'),
-            handler: function (direction) {
-                console.log(direction);
-                if (direction == 'down') {
-                    $("body").addClass("fixed_menu");
-                } else {
-                    $("body").removeClass("fixed_menu");
-                }
-            },
-            offset: -2
-        });
-    }
+    var waypoint = new Waypoint({
+        element: document.getElementById('menu_trigger'),
+        handler: function (direction) {
+            console.log(direction);
+            if (direction == 'down') {
+                $("body").addClass("fixed_menu");
+            } else {
+                $("body").removeClass("fixed_menu");
+            }
+        },
+        offset: -2
+    });
     init_search();
 });
 function init_search() {
