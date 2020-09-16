@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Member Portal </title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body
+    class="home page-template page-template-template-registration page-template-template-registration-php page page-id-21 user-registration-page user-registration-account microsure-home">
+    <div id="menu_trigger">
+    </div>
+    <div class="d-block d-lg-none mymusa_menu v2" id="side_menu">
+        <div class="side_menu-shape">
+            <div class='d-flex justify-content-between justify-content-sm-end align-items-center'>
+                <div class="menu_logo-shape_small d-block d-sm-none">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div id="close_side"><i class="material-icons">close</i></div>
+            </div>
+            <div class="side_menu-container">
+                <div class="single-menu-link-transform has_submenu ">
+                    <div class="single-menu-link-shape ">
+                        <a href="javascript:void(0)">Member Portal</a>
+                        <div class="cross small blue"></div>
+                        <div class="submenu-transform">
+                            <div class="submenu-shape">
+                                <div class="single_submenu_link">
+                                    <a href="javascript:void(0)">Login</a>
+                                </div>
+                                <div class="single_submenu_link">
+                                    <a href="javascript:void(0)">Register</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex d-lg-none menu_search-shape">
+                    <input type="text" placeholder="Search">
+                    <div class="menu_search-icon"><i class="fa fa-search"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="menu" class="mymusa_menu v2">
+        <div class="overbar">
+            <a href="javascript:void(0)"> <span class="material-icons">home</span> Back to main Website</a>
+            <h4 class="portal_title">Member portal</h4>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="d-flex justify-content-between align-items-end justify-content-lg-between justify-content-xl-between"
+                        id="menu_flex">
+                        <div class="align-self-center align-self-md-center align-self-lg-end" id="menu_logo">
+                            <div class="menu_logo-shape">
+                                <a href="index.html">
+                                    <img src="img/logo.png" alt="logo">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="d-none d-lg-block" id="menu_links">
+                            <div class="d-flex align-items-baseline menu_links-shape" id="menu-links-flex">
+                                <div class="single-menu-link-transform has_submenu ">
+                                    <div class="single-menu-link-shape ">
+                                        <a href="javascript:void(0)">Member Portal</a>
+                                        <div class="cross small blue"></div>
+                                        <div class="submenu-transform">
+                                            <div class="submenu-shape">
+                                                <div class="single_submenu_link musa_not_logged_in">
+                                                    <a href="javascript:void(0)">Login</a>
+                                                </div>
+                                                <div class="single_submenu_link musa_not_logged_in">
+                                                    <a href="javascript:void(0)">Register</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-none d-lg-block align-self-center align-self-lg-end " id="menu_search">
+                            <form id="search-form" action="#" method="get">
+                                <p>
+                                    <input type="text" maxlength="100" value="" placeholder="Search" name="q" id="q"
+                                        autocomplete="off">
+                                    <span class="fa fa-search iorbit-search-link"></span>
+                                </p>
+                            </form>
+                        </div>
+                        <div class="d-block d-lg-none align-self-center" id="burger_button">
+                            <i class="material-icons">menu</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="menu_margin_correct" class="d-block g-lg-block">
+    </div>
+    <section id="register" class="">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2 class=""> </h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="registration">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div id="user-registration" class="user-registration">
+                        <div class="ur-frontend-form login ur-frontend-form--rounded" id="ur-frontend-form">
+                            <form class="user-registration-form user-registration-form-login login text-center"
+                                method="post">
+                                <div class="ur-form-row">
+                                    <div class="ur-form-grid">
+                                        <p
+                                            class="user-registration-form-row user-registration-form-row--wide form-row form-row-wide">
+                                            <label for="username">Username or email address <span
+                                                    class="required">*</span></label>
+                                            <input type="text"
+                                                class="user-registration-Input user-registration-Input--text input-text"
+                                                name="username" id="username" value="" />
+                                        </p>
+                                        <p
+                                            class="user-registration-form-row user-registration-form-row--wide form-row form-row-wide">
+                                            <label for="username">Password <span class="required">*</span></label>
+                                            <input type="email"
+                                                class="user-registration-Input user-registration-Input--text input-text"
+                                                name="password" id="password" value="" />
+                                        </p>
+                                        <!-- <p class="user-registration-form-row user-registration-form-row--wide form-row form-row-wide hide_show_password">
+                                            <label for="password">Password <span class="required">*</span></label>
+                                            <span class="password-input-group">
+                                                <input class="user-registration-Input user-registration-Input--text input-text" type="password" name="password" id="password" />
+                                                <a href="javaScript:void(0)" class="password_preview dashicons dashicons-hidden" title="Show password"></a>
+                                            </span>
+                                        </p> -->
+                                        <p class="form-row">
+                                            <input type="hidden" id="user-registration-login-nonce"
+                                                name="user-registration-login-nonce" value="0b58e240f0" />
+                                            <input type="hidden" name="_wp_http_referer" value="/mymusa/" />
+                                            <input type="submit" class="user-registration-Button button" name="login"
+                                                value="Login" />
+                                            <input type="hidden" name="redirect" value="" />
+                                            <label
+                                                class="user-registration-form__label user-registration-form__label-for-checkbox inline">
+                                                <input
+                                                    class="user-registration-form__input user-registration-form__input-checkbox"
+                                                    name="rememberme" type="checkbox" id="rememberme" value="forever" />
+                                                <span>Remember me</span>
+                                            </label>
+                                        </p>
+                                        <p class="user-registration-LostPassword lost_password">
+                                            <a href="javascript:void(0)">Lost your password?</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="footer">
+        <div class="container">
+            <div class="row" id="footer-top">
+                <div class="col">
+                    <div class="d-flex justify-content-between align-items-start flex-wrap flex-md-nowrap" id="footer_flex">
+                        <div id="footer_logo">
+                            <img src="img/logo.png">
+                            <div id="footer_address">
+                                <p><a href="javascript:void(0)">support@iorbit.com</a></p>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-wrap flex-md-nowrap" id="footer_links">
+                            <div class="footer-link-set">
+                                <div class="footer_main_link"><a href="javascript:void(0)">Member Portal</a>
+                                </div>
+                                <div class="footer_sub_links">
+                                    <div class="d-flex align-items-center footer_single_sub_link">
+                                        <div class="cross x-small blue"></div>
+                                        <a href="javascript:void(0)">Dashboard</a>
+                                    </div>
+                                    <div class="d-flex align-items-center footer_single_sub_link">
+                                        <div class="cross x-small blue"></div>
+                                        <a href="javascript:void(0)">Login</a>
+                                    </div>
+                                    <div class="d-flex align-items-center footer_single_sub_link">
+                                        <div class="cross x-small blue"></div>
+                                        <a href="javascript:void(0)">Register</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="footer-bottom">
+                <div class="col">
+                    <hr>
+                    <div class="d-flex justify-content-between" id="footer-bottom-flex">
+                        <div>
+                            <a href="javascript:void(0)" target="_blank"><img src="img/icons/linkedin.svg" /></a>
+                            <a href="javascript:void(0)" target="_blank"><img src="img/icons/twitter.svg" /></a>
+                            <a href="javascript:void(0)" target="_blank"><img src="img/icons/fb.svg"></a>
+                        </div><span>© iOrbit 2020</span>
+                    </div>
+                </div>
+            </div>
+            <div id="legal">
+                <div class="row ">
+                    <div class="col">
+                        <a class="white" href="javascript:void(0)">Privacy Policy</a> 
+                        <a href="javascript:void(0)">Cookies</a> 
+                        <a href="javascript:void(0)">Disclaimer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/lightbox.min.js"></script>
+</body>
+</html>
