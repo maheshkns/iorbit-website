@@ -1241,7 +1241,7 @@ html.open_search #menu-links-flex {
 #footer {
     background: #000033;
     padding: 12em 0em 10em 0em;
-    font-family: 'Nexa Book', sans-serif;
+    /* font-family: 'Nexa Book', sans-serif; */
 }
 
 #footer_logo .footer_logo_img {
@@ -1870,7 +1870,7 @@ a:hover {
 .generic-text {
     font-size: 1.8em;
     line-height: 1.35em;
-    font-family: "Nexa Book", Sans-Serif;
+    /* font-family: "Nexa Book", Sans-Serif; */
 }
 
 h1 {
@@ -2014,7 +2014,7 @@ h4 {
     line-height: 0.8em;
     height: 0.5em;
     font-weight: 300;
-    font-family: 'Nexa', sans serif;
+    /* font-family: 'Nexa', sans serif; */
     color: #0066cc;
     width: 100;
     font-style: italic;
@@ -2462,7 +2462,7 @@ h2 {
     margin: 30px 0;
 }
 #registration code, #registration kbd, #registration pre, #registration samp {
-    font-family: 'Nexa', sans-serif;
+    /* font-family: 'Nexa', sans-serif; */
     font-size: 1em;
 }
 #registration code {
