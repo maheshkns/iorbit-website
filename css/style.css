@@ -2636,3 +2636,7 @@ h2 {
   filter: brightness(100%);
   transform: scale(1.5);
 }
+
+div#news_data h3 {
+    font-size: 2.5em !important;
+}
