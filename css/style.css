@@ -1719,6 +1719,26 @@ a:hover {
     -o-transform: rotate(0deg);
 }
 
+.cross-cust {
+    
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    position: absolute !important;
+    bottom: 20px !important;
+    right: 0px !important;
+}
+
 .cross:before {
     width: 1px;
     height: 100%;
@@ -2187,6 +2207,7 @@ h4 {
 .field-wrap select,
 .field-wrap textarea {
     width: 100%;
+    height: 30px;
 }
 
 .nf-field-element textarea {
@@ -2639,4 +2660,31 @@ h2 {
 
 div#news_data h3 {
     font-size: 2.5em !important;
+}
+
+.wp-block-button.aligncenter {
+    text-align: center;
+}
+.aligncenter, div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+.wp-block-button {
+    color: #fff;
+    margin-bottom: 1.5em;
+}
+.wp-block-button__link {
+    background-color: #32373c;
+    border: none;
+    border-radius: 28px;
+    box-shadow: none;
+    color: inherit;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 18px;
+    margin: 0;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    overflow-wrap: break-word;
 }
