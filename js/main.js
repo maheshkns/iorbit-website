@@ -138,7 +138,7 @@ function set_menu($item) {
         } else {
             var submenu_h = $item.closest(".has_submenu").find(".submenu-shape").height() - ($("#menu").height() / 2);
             if (submenu_h > -40) {
-                submenu_h += 70;
+                submenu_h += 110;
                 $("#menu").css("paddingBottom", submenu_h + "px");
             }
         }
