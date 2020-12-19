@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,59 +9,15 @@
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/lightbox.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" type="text/css" media="screen" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <style type="text/css">
-        /* The Modal (background) */
-        .modal {
-            display: none; /* Hidden by default */
-            position: fixed; /* Stay in place */
-            z-index: 1; /* Sit on top */
-            left: 0;
-            top: 0;
-            width: 100%; /* Full width */
-            height: 100%; /* Full height */
-            overflow: auto; /* Enable scroll if needed */
-            background-color: rgb(0,0,0); /* Fallback color */
-            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-        }
-
-        /* Modal Content/Box */
-        .modal-content {
-            background-color: #fefefe;
-            margin: 15% auto; /* 15% from the top and centered */
-            padding: 20px;
-            border: 1px solid #888;
-            width: auto; /* Could be more or less, depending on screen size */
-        }
-
-        /* The Close Button */
-        .close {
-            color: #aaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
-
-        .close:hover,
-        .close:focus {
-            color: black;
-            text-decoration: none;
-            cursor: pointer;
-        }
-    </style>
 </head>
+
 <body>
-
-    <div id="myModal" class="modal">
-
-      <!-- Modal content -->
-      <div class="modal-content" id="popup1">
-        <span class="close">&times;</span>
-        <img src="img/Webcard.jpg" width="770" alt="Webcard" />
-      </div>
-
+    <div id="consolPopup">
+        <img src="img/Webcard.jpg" class="img-fluid" />
     </div>
-    
+
     <div id="menu_trigger">
     </div>
     <div class="d-block d-lg-none" id="side_menu">
@@ -99,7 +56,7 @@
                                 <div class="single_submenu_link">
                                     <a href="case-studies.html">Case Studies</a>
                                 </div>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -218,10 +175,12 @@
                                                     <div><a href="service1.html"> iOrbit Design Studio </a></div>
                                                 </div>
                                                 <div class="single_submenu_link">
-                                                    <div><a href="service3.html"> Regulatory and Compliance Support </a></div>
+                                                    <div><a href="service3.html"> Regulatory and Compliance Support </a>
+                                                    </div>
                                                 </div>
                                                 <div class="single_submenu_link">
-                                                    <div><a href="service4.html"> IoT Product Hosting and Maintenance </a></div>
+                                                    <div><a href="service4.html"> IoT Product Hosting and Maintenance
+                                                        </a></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -273,10 +232,9 @@
     </section>
     <div id="menu_margin_correct" class="d-block g-lg-block">
     </div>
-    
 
-    <section id="banner" class="banner video_dimensions"
-        style="background-image: url(img/home-page-banner.jpg);">
+
+    <section id="banner" class="banner video_dimensions" style="background-image: url(img/home-page-banner.jpg);">
         <!-- style="background-image: url(https://microsure.nl/wp-content/uploads/2019/05/about_us_banner-80.jpg);"> -->
 
         <div class="d-flex justify-content-center align-items-center flex-wrap banner banner_main" id="banner_main">
@@ -303,11 +261,19 @@
             <div class="row">
                 <div class="col" style="padding-bottom: 3em;">
                     <div class="intro-paragraph">
-                        <h2 class="" data-aos="fade-up" data-aos-duration="1500"><strong>Digital Health solutions help create a robust healthcare ecosystem</strong></h2>
+                        <h2 class="" data-aos="fade-up" data-aos-duration="1500"><strong>Digital Health solutions help
+                                create a robust healthcare ecosystem</strong></h2>
                         <div class="generic-text" data-aos="fade-up" data-aos-duration="1500">
                             <p>Digital Health can revolutionise the way you deal with healthcare delivery </p>
-                            <p><br>Through advanced AI based Health Solutions in the IoMT (Internet of Medical Things), iOrbit plays a catalytic role in the entire continuum of care from tracking patient data in hospitals through post-hospital care (monitoring) to individual care, ensuring timely medical intervention.   </p>
-                            <p><br>Wherever data resides, unique highly secured solutions ‘talk to each other’ and warn doctors and healthcare professionals in advance of any deviation from normal in patients. This helps transform healthcare from a ‘sick care’ model, to one that’s preventive and 'always-on', thereby enabling patients to move towards better levels of self-care at home and stay healthier in the long term. </p>
+                            <p><br>Through advanced AI based Health Solutions in the IoMT (Internet of Medical Things),
+                                iOrbit plays a catalytic role in the entire continuum of care from tracking patient data
+                                in hospitals through post-hospital care (monitoring) to individual care, ensuring timely
+                                medical intervention. </p>
+                            <p><br>Wherever data resides, unique highly secured solutions ‘talk to each other’ and warn
+                                doctors and healthcare professionals in advance of any deviation from normal in
+                                patients. This helps transform healthcare from a ‘sick care’ model, to one that’s
+                                preventive and 'always-on', thereby enabling patients to move towards better levels of
+                                self-care at home and stay healthier in the long term. </p>
                             <!-- <div class="wp-block-button aligncenter"><a class="wp-block-button__link"
                                     href="contact.html#contact-form">Let us begin the Connected Health journey together!</a></div> -->
                         </div>
@@ -317,14 +283,13 @@
         </div>
     </section>
 
-    
+
 
     <section class="image_text_box text_bottom text_right">
         <div class="container">
             <div class="row image-text-img" data-aos="fade-up" data-aos-duration="3000" data-aos-offset="0"
                 id="quick_1017">
-                <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10   "><img
-                        src="img/Health-journey.jpg"></div>
+                <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10   "><img src="img/Health-journey.jpg"></div>
             </div>
             <div class="row image-text-text">
                 <div class="col d-flex justify-content-end">
@@ -336,7 +301,11 @@
                                     <div class="border-box-content-top">
                                         <h2><strong>Let us begin the Connected Health journey together</strong></h2>
                                         <div class="generic-text">
-                                            <p>Connect to life-giving health. Navigate with ease a world of futuristic possibilities. Become part of a thriving healthcare ecosystem where lives matter. Because the next data you access could save someone. Together we can shape a whole new world of healthcare and enhance quality of life for all.</p>
+                                            <p>Connect to life-giving health. Navigate with ease a world of futuristic
+                                                possibilities. Become part of a thriving healthcare ecosystem where
+                                                lives matter. Because the next data you access could save someone.
+                                                Together we can shape a whole new world of healthcare and enhance
+                                                quality of life for all.</p>
                                         </div>
                                     </div>
                                     <div class="align-self-end cross-link" id="cross-link">
@@ -396,7 +365,8 @@
                                 <div class="align-self-start detail-data">
                                     <h3>Data privacy and data security</h3>
                                     <!-- wp:paragraph -->
-                                    <p>Anonymisation of patient details and sensitive information with Data encryption at multiple levels supported by multiple layers of authentication</p>
+                                    <p>Anonymisation of patient details and sensitive information with Data encryption
+                                        at multiple levels supported by multiple layers of authentication</p>
                                     <!-- /wp:paragraph -->
                                 </div>
                             </div>
@@ -416,7 +386,8 @@
                                 <div class="align-self-start detail-data">
                                     <h3>Interoperability</h3>
                                     <!-- wp:paragraph -->
-                                    <p> Efficient data portability and seamless integration with existing information systems</p>
+                                    <p> Efficient data portability and seamless integration with existing information
+                                        systems</p>
                                     <!-- /wp:paragraph -->
                                 </div>
                             </div>
@@ -448,7 +419,17 @@
                                     <div class="border-box-content-top">
                                         <h2><strong>IoT Platform for Medical Devices</strong></h2>
                                         <div class="generic-text">
-                                            <p>Being on the cutting edge of healthcare helps ensure every angle of a patient’s health parameters is covered. Through its meticulously built iThings CMD, iOrbit’s Connected Medical Devices platform leverages the latest devices, technologies and platforms to create robust Digital Health Solutions that have helped arm Medical specialists of all disciplines and other healthcare professionals with the quality practices they need, to level up patient care, health centre standards and reduce medico-legal risks. No matter where they are, No matter the hour, through its IoT enabled platform, doctors gain a more holistic view of patient health and can access instant life-saving information at their fingertips.</p>
+                                            <p>Being on the cutting edge of healthcare helps ensure every angle of a
+                                                patient’s health parameters is covered. Through its meticulously built
+                                                iThings CMD, iOrbit’s Connected Medical Devices platform leverages the
+                                                latest devices, technologies and platforms to create robust Digital
+                                                Health Solutions that have helped arm Medical specialists of all
+                                                disciplines and other healthcare professionals with the quality
+                                                practices they need, to level up patient care, health centre standards
+                                                and reduce medico-legal risks. No matter where they are, No matter the
+                                                hour, through its IoT enabled platform, doctors gain a more holistic
+                                                view of patient health and can access instant life-saving information at
+                                                their fingertips.</p>
                                         </div>
                                     </div>
                                     <div class="align-self-end cross-link" id="cross-link">
@@ -558,10 +539,19 @@
                                 <div class="d-flex align-items-start flex-wrap border-box-content" data-aos="fade-up"
                                     data-aos-duration="3000" data-aos-offset="0" id="quick_content_1017">
                                     <div class="border-box-content-top">
-                                        <h2><strong> Adding Intelligence and Scalability to Medical Devices </strong></h2>
+                                        <h2><strong> Adding Intelligence and Scalability to Medical Devices </strong>
+                                        </h2>
                                         <div class="generic-text">
-                                            <p>iOrbit comes with years of experience and expertise in interacting with device manufacturers and healthcare providers, facilitating processes that improve patient care and sharpen competitive edge. Through intelligent direction, skilful execution and advanced technology, iOrbit works with you at every stage to enable you to develop product platforms that help you scale your offerings seamlessly from high volume, low complexity to low volume, high complexity. Based on healthcare needs and protocols, we then help you deploy future-ready devices, that combine scalability and flexibility, into an intelligent ecosystem.</p>
-                                            
+                                            <p>iOrbit comes with years of experience and expertise in interacting with
+                                                device manufacturers and healthcare providers, facilitating processes
+                                                that improve patient care and sharpen competitive edge. Through
+                                                intelligent direction, skilful execution and advanced technology, iOrbit
+                                                works with you at every stage to enable you to develop product platforms
+                                                that help you scale your offerings seamlessly from high volume, low
+                                                complexity to low volume, high complexity. Based on healthcare needs and
+                                                protocols, we then help you deploy future-ready devices, that combine
+                                                scalability and flexibility, into an intelligent ecosystem.</p>
+
                                         </div>
                                     </div>
                                     <div class="align-self-end cross-link" id="cross-link">
@@ -585,7 +575,7 @@
             </div>
         </div>
     </section>
-    
+
     <section id="front-details">
         <div id="front-details-bg"><img
                 src="https://microsure.nl/wp-content/themes/html5blank-stable/resources/assets/img/waves/wave_1.svg">
@@ -621,7 +611,8 @@
                                 <div class="align-self-start detail-data">
                                     <h3>Blaze new trails</h3>
                                     <!-- wp:paragraph -->
-                                    <p>Opportunity to device manufacturers to expand footprint in the local and overseas markets</p>
+                                    <p>Opportunity to device manufacturers to expand footprint in the local and overseas
+                                        markets</p>
                                     <!-- /wp:paragraph -->
                                 </div>
                             </div>
@@ -661,7 +652,7 @@
             <div class="row image-text-img" data-aos="fade-up" data-aos-duration="3000" data-aos-offset="0"
                 id="quick_1358">
                 <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10   offset-md-2 offset-lg-2 offset-xl-2  "><img
-                src="img/join-us.jpg"></div>
+                        src="img/join-us.jpg"></div>
             </div>
             <div class="row image-text-text">
                 <div class="col d-flex justify-content-start">
@@ -673,7 +664,9 @@
                                     <div class="border-box-content-top">
                                         <h2><strong>Join Us</strong></h2>
                                         <div class="generic-text">
-                                            <p> We are a growing company seeking worldwide participation and involvement of people from different streams of digital health. If you are one of them, please join us! </p>
+                                            <p> We are a growing company seeking worldwide participation and involvement
+                                                of people from different streams of digital health. If you are one of
+                                                them, please join us! </p>
                                         </div>
                                     </div>
                                     <div class="align-self-end cross-link" id="cross-link">
@@ -697,7 +690,7 @@
             </div>
         </div>
     </section>
-    
+
     <section id="contact-form" class="general_paragraph">
         <div class="container">
             <div class="row">
@@ -714,30 +707,59 @@
                                             <div>
                                                 <div class="nf-before-form-content">
                                                     <nf-section>
-                                                        <div class="nf-form-fields-required">Fields marked with an <span class="ninja-forms-req-symbol">*</span> are required
+                                                        <div class="nf-form-fields-required">Fields marked with an <span
+                                                                class="ninja-forms-req-symbol">*</span> are required
                                                         </div>
                                                     </nf-section>
                                                 </div>
                                                 <div class="nf-form-content ">
                                                     <nf-fields-wrap>
                                                         <nf-field>
-                                                            <div id="nf-field-143-container" class="nf-field-container listselect-container  label-above  list-container">
+                                                            <div id="nf-field-143-container"
+                                                                class="nf-field-container listselect-container  label-above  list-container">
                                                                 <div class="nf-field">
-                                                                    <div id="nf-field-143-wrap" class="field-wrap listselect-wrap list-wrap list-select-wrap" data-field-id="143">
+                                                                    <div id="nf-field-143-wrap"
+                                                                        class="field-wrap listselect-wrap list-wrap list-select-wrap"
+                                                                        data-field-id="143">
                                                                         <div class="nf-field-label">
-                                                                            <label for="nf-field-143" id="nf-label-field-143" class="">How can we be of service? 
-                                                                                <span class="ninja-forms-req-symbol">*</span>
+                                                                            <label for="nf-field-143"
+                                                                                id="nf-label-field-143" class="">How can
+                                                                                we be of service?
+                                                                                <span
+                                                                                    class="ninja-forms-req-symbol">*</span>
                                                                             </label>
                                                                         </div>
 
                                                                         <div class="nf-field-element">
-                                                                            <select id="nf-field-143" name="nf-field-143" class="ninja-forms-field nf-element" required="">
-                                                                                <option value="select-options" selected="selected"> Select one of the options.. </option>
-                                                                                <option value="I would like to know more about how iThings CMD can benefit my business">I would like to know more about how iThings CMD can benefit my business</option>
-                                                                                <option value="I would like to collaborate as a clinical partner">I would like to collaborate as a clinical partner</option>
-                                                                                <option value="I would like to collaborate as a reseller or distribution partner for iOrbit">I would like to collaborate as a reseller or distribution partner for iOrbit</option>
-                                                                                <option value="I would like to receive technical help for my solution built on iThings CMD">I would like to receive technical help for my solution built on iThings CMD</option>
-                                                                                <option value="I want to work for iOrbit">I want to work for iOrbit</option>
+                                                                            <select id="nf-field-143"
+                                                                                name="nf-field-143"
+                                                                                class="ninja-forms-field nf-element"
+                                                                                required="">
+                                                                                <option value="select-options"
+                                                                                    selected="selected"> Select one of
+                                                                                    the options.. </option>
+                                                                                <option
+                                                                                    value="I would like to know more about how iThings CMD can benefit my business">
+                                                                                    I would like to know more about how
+                                                                                    iThings CMD can benefit my business
+                                                                                </option>
+                                                                                <option
+                                                                                    value="I would like to collaborate as a clinical partner">
+                                                                                    I would like to collaborate as a
+                                                                                    clinical partner</option>
+                                                                                <option
+                                                                                    value="I would like to collaborate as a reseller or distribution partner for iOrbit">
+                                                                                    I would like to collaborate as a
+                                                                                    reseller or distribution partner for
+                                                                                    iOrbit</option>
+                                                                                <option
+                                                                                    value="I would like to receive technical help for my solution built on iThings CMD">
+                                                                                    I would like to receive technical
+                                                                                    help for my solution built on
+                                                                                    iThings CMD</option>
+                                                                                <option
+                                                                                    value="I want to work for iOrbit">I
+                                                                                    want to work for iOrbit</option>
                                                                             </select>
                                                                             <div for="nf-field-143"></div>
                                                                         </div>
@@ -746,128 +768,182 @@
                                                             </div>
                                                         </nf-field>
                                                         <nf-field>
-                                                            <div id="nf-field-144-container" class="nf-field-container firstname-container  label-above ">
+                                                            <div id="nf-field-144-container"
+                                                                class="nf-field-container firstname-container  label-above ">
                                                                 <div class="nf-field">
-                                                                    <div id="nf-field-144-wrap" class="field-wrap firstname-wrap">
+                                                                    <div id="nf-field-144-wrap"
+                                                                        class="field-wrap firstname-wrap">
                                                                         <div class="nf-field-label">
-                                                                            <label for="nf-field-144" id="nf-label-field-144" class="">First Name 
-                                                                                <span class="ninja-forms-req-symbol">*</span>
+                                                                            <label for="nf-field-144"
+                                                                                id="nf-label-field-144" class="">First
+                                                                                Name
+                                                                                <span
+                                                                                    class="ninja-forms-req-symbol">*</span>
                                                                             </label>
                                                                         </div>
 
                                                                         <div class="nf-field-element">
-                                                                            <input type="text" value="" class="ninja-forms-field nf-element" id="nf-field-144" name="fname" autocomplete="given-name" required="" />
+                                                                            <input type="text" value=""
+                                                                                class="ninja-forms-field nf-element"
+                                                                                id="nf-field-144" name="fname"
+                                                                                autocomplete="given-name" required="" />
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </nf-field>
                                                         <nf-field>
-                                                            <div id="nf-field-145-container" class="nf-field-container lastname-container label-above">
+                                                            <div id="nf-field-145-container"
+                                                                class="nf-field-container lastname-container label-above">
                                                                 <div class="nf-field">
-                                                                    <div id="nf-field-145-wrap" class="field-wrap lastname-wrap">
+                                                                    <div id="nf-field-145-wrap"
+                                                                        class="field-wrap lastname-wrap">
                                                                         <div class="nf-field-label">
-                                                                            <label for="nf-field-145" id="nf-label-field-145" class="">Last Name 
-                                                                                <span class="ninja-forms-req-symbol">*</span>
+                                                                            <label for="nf-field-145"
+                                                                                id="nf-label-field-145" class="">Last
+                                                                                Name
+                                                                                <span
+                                                                                    class="ninja-forms-req-symbol">*</span>
                                                                             </label>
                                                                         </div>
 
                                                                         <div class="nf-field-element">
-                                                                            <input type="text" value="" class="ninja-forms-field nf-element" id="nf-field-145" name="lname" autocomplete="org" required="" />
+                                                                            <input type="text" value=""
+                                                                                class="ninja-forms-field nf-element"
+                                                                                id="nf-field-145" name="lname"
+                                                                                autocomplete="org" required="" />
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </nf-field>
                                                         <nf-field>
-                                                            <div id="nf-field-145-container" class="nf-field-container lastname-container label-above">
+                                                            <div id="nf-field-145-container"
+                                                                class="nf-field-container lastname-container label-above">
                                                                 <div class="nf-field">
-                                                                    <div id="nf-field-145-wrap" class="field-wrap lastname-wrap">
+                                                                    <div id="nf-field-145-wrap"
+                                                                        class="field-wrap lastname-wrap">
                                                                         <div class="nf-field-label">
-                                                                            <label for="nf-field-145" id="nf-label-field-145" class="">Email 
-                                                                                <span class="ninja-forms-req-symbol">*</span>
+                                                                            <label for="nf-field-145"
+                                                                                id="nf-label-field-145" class="">Email
+                                                                                <span
+                                                                                    class="ninja-forms-req-symbol">*</span>
                                                                             </label>
                                                                         </div>
 
                                                                         <div class="nf-field-element">
-                                                                            <input type="email" value="" class="ninja-forms-field nf-element" id="nf-field-145" name="lname" autocomplete="email" required="" />
+                                                                            <input type="email" value=""
+                                                                                class="ninja-forms-field nf-element"
+                                                                                id="nf-field-145" name="lname"
+                                                                                autocomplete="email" required="" />
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </nf-field>
                                                         <nf-field>
-                                                            <div id="nf-field-145-container" class="nf-field-container lastname-container label-above">
+                                                            <div id="nf-field-145-container"
+                                                                class="nf-field-container lastname-container label-above">
                                                                 <div class="nf-field">
-                                                                    <div id="nf-field-145-wrap" class="field-wrap lastname-wrap">
+                                                                    <div id="nf-field-145-wrap"
+                                                                        class="field-wrap lastname-wrap">
                                                                         <div class="nf-field-label">
-                                                                            <label for="nf-field-145" id="nf-label-field-145" class="">Phone 
-                                                                                <span class="ninja-forms-req-symbol">*</span>
+                                                                            <label for="nf-field-145"
+                                                                                id="nf-label-field-145" class="">Phone
+                                                                                <span
+                                                                                    class="ninja-forms-req-symbol">*</span>
                                                                             </label>
                                                                         </div>
 
                                                                         <div class="nf-field-element">
-                                                                            <input type="text" value="" class="ninja-forms-field nf-element" id="nf-field-145" name="phone" autocomplete="phone" required="" />
+                                                                            <input type="text" value=""
+                                                                                class="ninja-forms-field nf-element"
+                                                                                id="nf-field-145" name="phone"
+                                                                                autocomplete="phone" required="" />
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </nf-field>
                                                         <nf-field>
-                                                            <div id="nf-field-145-container" class="nf-field-container lastname-container label-above">
+                                                            <div id="nf-field-145-container"
+                                                                class="nf-field-container lastname-container label-above">
                                                                 <div class="nf-field">
-                                                                    <div id="nf-field-145-wrap" class="field-wrap lastname-wrap">
+                                                                    <div id="nf-field-145-wrap"
+                                                                        class="field-wrap lastname-wrap">
                                                                         <div class="nf-field-label">
-                                                                            <label for="nf-field-145" id="nf-label-field-145" class="">Organization 
-                                                                                <span class="ninja-forms-req-symbol">*</span>
+                                                                            <label for="nf-field-145"
+                                                                                id="nf-label-field-145"
+                                                                                class="">Organization
+                                                                                <span
+                                                                                    class="ninja-forms-req-symbol">*</span>
                                                                             </label>
                                                                         </div>
 
                                                                         <div class="nf-field-element">
-                                                                            <input type="text" value="" class="ninja-forms-field nf-element" id="nf-field-145" name="org" autocomplete="org" required="" />
+                                                                            <input type="text" value=""
+                                                                                class="ninja-forms-field nf-element"
+                                                                                id="nf-field-145" name="org"
+                                                                                autocomplete="org" required="" />
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </nf-field>
                                                         <nf-field>
-                                                            <div id="nf-field-145-container" class="nf-field-container lastname-container label-above">
+                                                            <div id="nf-field-145-container"
+                                                                class="nf-field-container lastname-container label-above">
                                                                 <div class="nf-field">
-                                                                    <div id="nf-field-145-wrap" class="field-wrap lastname-wrap">
+                                                                    <div id="nf-field-145-wrap"
+                                                                        class="field-wrap lastname-wrap">
                                                                         <div class="nf-field-label">
-                                                                            <label for="nf-field-145" id="nf-label-field-145" class=""> City 
+                                                                            <label for="nf-field-145"
+                                                                                id="nf-label-field-145" class=""> City
                                                                             </label>
                                                                         </div>
 
                                                                         <div class="nf-field-element">
-                                                                            <input type="text" value="" class="ninja-forms-field nf-element" id="nf-field-145" name="city" autocomplete="city"/>
+                                                                            <input type="text" value=""
+                                                                                class="ninja-forms-field nf-element"
+                                                                                id="nf-field-145" name="city"
+                                                                                autocomplete="city" />
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </nf-field>
                                                         <nf-field>
-                                                            <div id="nf-field-152-container" class="nf-field-container textarea-container label-above">
+                                                            <div id="nf-field-152-container"
+                                                                class="nf-field-container textarea-container label-above">
                                                                 <div class="nf-field">
-                                                                    <div id="nf-field-152-wrap" class="field-wrap textarea-wrap">
+                                                                    <div id="nf-field-152-wrap"
+                                                                        class="field-wrap textarea-wrap">
                                                                         <div class="nf-field-label">
-                                                                            <label for="nf-field-152" id="nf-label-field-152" class="">Optional message </label>
+                                                                            <label for="nf-field-152"
+                                                                                id="nf-label-field-152"
+                                                                                class="">Optional message </label>
                                                                         </div>
 
                                                                         <div class="nf-field-element">
-                                                                            <textarea id="nf-field-152" name="nf-field-152" class="ninja-forms-field nf-element" ></textarea>
+                                                                            <textarea id="nf-field-152"
+                                                                                name="nf-field-152"
+                                                                                class="ninja-forms-field nf-element"></textarea>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </nf-field>
                                                         <nf-field>
-                                                            <div id="nf-field-151-container" class="nf-field-container submit-container  label-above  textbox-container">
+                                                            <div id="nf-field-151-container"
+                                                                class="nf-field-container submit-container  label-above  textbox-container">
                                                                 <div class="nf-field">
-                                                                    <div id="nf-field-151-wrap" class="field-wrap submit-wrap textbox-wrap">
+                                                                    <div id="nf-field-151-wrap"
+                                                                        class="field-wrap submit-wrap textbox-wrap">
                                                                         <div class="nf-field-label"></div>
                                                                         <div class="nf-field-element">
-                                                                            <input id="nf-field-151" class="ninja-forms-field nf-element " type="button" value="Submit">
+                                                                            <input id="nf-field-151"
+                                                                                class="ninja-forms-field nf-element "
+                                                                                type="button" value="Submit">
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -918,10 +994,12 @@
                                         <div class="cross x-small blue"></div><a href="ithings-cmd.html">iThings CMD</a>
                                     </div>
                                     <div class="d-flex align-items-center footer_single_sub_link">
-                                        <div class="cross x-small blue"></div><a href="white-labelled-designs.html">White Labelled Designs</a>
+                                        <div class="cross x-small blue"></div><a
+                                            href="white-labelled-designs.html">White Labelled Designs</a>
                                     </div>
                                     <div class="d-flex align-items-center footer_single_sub_link">
-                                        <div class="cross x-small blue"></div><a href="case-studies.html">Case Studies</a>
+                                        <div class="cross x-small blue"></div><a href="case-studies.html">Case
+                                            Studies</a>
                                     </div>
                                 </div>
                             </div>
@@ -931,16 +1009,20 @@
                                 </div>
                                 <div class="footer_sub_links">
                                     <div class="d-flex align-items-center footer_single_sub_link">
-                                        <div class="cross x-small blue"></div><a href="service2.html"> Product Conceptualization </a>
+                                        <div class="cross x-small blue"></div><a href="service2.html"> Product
+                                            Conceptualization </a>
                                     </div>
                                     <div class="d-flex align-items-center footer_single_sub_link">
-                                        <div class="cross x-small blue"></div><a href="service1.html"> iOrbit Design Studio </a>
+                                        <div class="cross x-small blue"></div><a href="service1.html"> iOrbit Design
+                                            Studio </a>
                                     </div>
                                     <div class="d-flex align-items-center footer_single_sub_link">
-                                        <div class="cross x-small blue"></div><a href="service3.html"> Regulatory and Compliance Support </a>
+                                        <div class="cross x-small blue"></div><a href="service3.html"> Regulatory and
+                                            Compliance Support </a>
                                     </div>
                                     <div class="d-flex align-items-center footer_single_sub_link">
-                                        <div class="cross x-small blue"></div><a href="service4.html"> IoT Product Hosting and Maintenance </a>
+                                        <div class="cross x-small blue"></div><a href="service4.html"> IoT Product
+                                            Hosting and Maintenance </a>
                                     </div>
                                     <!-- <div class="d-flex align-items-center footer_single_sub_link">
                                         <div class="cross x-small blue"></div><a href="service5.html"> Cloud based Application Development </a>
@@ -971,8 +1053,10 @@
                     <hr>
                     <div class="d-flex justify-content-between" id="footer-bottom-flex">
                         <div>
-                            <a href="https://www.linkedin.com/company/iorbitdigitaltechnologiespvt.ltd./?viewAsMember=true" target="_blank"><img src="img/icons/linkedin.svg" /></a>
-                            <a href="https://twitter.com/iorbit_digital" target="_blank"><img src="img/icons/twitter.svg" /></a>
+                            <a href="https://www.linkedin.com/company/iorbitdigitaltechnologiespvt.ltd./?viewAsMember=true"
+                                target="_blank"><img src="img/icons/linkedin.svg" /></a>
+                            <a href="https://twitter.com/iorbit_digital" target="_blank"><img
+                                    src="img/icons/twitter.svg" /></a>
                             <!-- <a href="javascript:void(0)" target="_blank"><img src="img/icons/fb.svg"></a> -->
                         </div><span>© iOrbit 2020</span>
                     </div>
@@ -996,30 +1080,17 @@
     <script src="js/main.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/lightbox.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            var modal = document.getElementById("myModal");
-           setTimeout(function(){
-              modal.style.display = "block";
-           },1000); // 5000 to load it after 5 seconds from page load
+    <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#consolPopup").fancybox({
+                'overlayShow': true,
+                clickSlide: false, // disable close on outside click
+                touch: false // disable close on swipe
 
-           // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close")[0];
-            
-
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function() {
-              modal.style.display = "none";
-            }
-
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function(event) {
-              if (event.target == modal) {
-                modal.style.display = "none";
-              }
-            }
+            }).trigger('click');
         });
-
     </script>
 </body>
+
 </html>
