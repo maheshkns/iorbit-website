@@ -1999,3 +1999,11 @@ ul li:before {
     color: #0066cc;
     padding-right: 8px;
 }
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block !important;
+}

@@ -16,6 +16,8 @@
             // 'phone' : $('input[name="form-phone"]').val(),
             // 'message' : $('textarea[name="form-message"]').val()
         };
+        
+        $('#loader').addClass('show');
 
         // process the form
         $.ajax({
@@ -46,8 +48,10 @@
                 //     $('#message-field').addClass('has-error');
                 //     $('#message-field').find('.form-input').append('<span class="help-block">' + data.errors.message + '</span>');
                 // }
+                $('#loader').addClass('hide');
             } else {
                 // display success message
+                $('#loader').addClass('hide');
                 $form.html('<div class="alert alert-success">' + data.message + '</div>');
             }
         }).fail(function (data) {
