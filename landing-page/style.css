@@ -1506,8 +1506,20 @@ label.mt10.valid {
 }
 
 .contact-form button {
+    /* background: #0066cc none repeat scroll 0 0;
+    color: #fff;
+    border: 0 none;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 10px;
+    width: 100%;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    text-transform: uppercase; */
+
+
     background: #0066cc none repeat scroll 0 0;
-    /* background: #009cde none repeat scroll 0 0; */
     color: #fff;
     border: 0 none;
     font-size: 18px;
@@ -1518,6 +1530,13 @@ label.mt10.valid {
     -webkit-transition: 0.3s;
     transition: 0.3s;
     text-transform: uppercase;
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    flex: 1;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .contact-form button:hover {
@@ -2001,9 +2020,18 @@ ul li:before {
 }
 
 .hide {
-    display: none;
+    display: none !important;
 }
 
 .show {
-    display: block !important;
+    display: flex !important;
+}
+
+.loader {
+    margin: 0 auto; 
+    width: 44px;
+}
+
+.btn-disabled{
+    pointer-events: none;
 }

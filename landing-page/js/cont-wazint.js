@@ -8,6 +8,7 @@
         // remove the error class
         $('.form-group').removeClass('has-error');
         $('.help-block').remove();
+        $('.contact-form button').addClass('btn-disabled');
 
         // get the form data
         var formData = {
@@ -48,9 +49,13 @@
                 //     $('#message-field').addClass('has-error');
                 //     $('#message-field').find('.form-input').append('<span class="help-block">' + data.errors.message + '</span>');
                 // }
+                $('#loader').removeClass('show');
+                $('.contact-form button').removeClass('btn-disabled');
                 $('#loader').addClass('hide');
             } else {
                 // display success message
+                $('#loader').removeClass('show');
+                $('.contact-form button').removeClass('btn-disabled');
                 $('#loader').addClass('hide');
                 $form.html('<div class="alert alert-success">' + data.message + '</div>');
             }
