@@ -10,11 +10,11 @@
     $mail->Host = 'smtp.pepipost.com';
     $mail->Port = 25;
     $mail->SMTPAuth = true;
-    $mail->Username = 'supportt1u40c';
-    $mail->Password = 'supportt1u40c_15368c8c20c5a1bb04078ab9adeb5489';
+    // $mail->Username = 'supportt1u40c';
+    // $mail->Password = 'supportt1u40c_15368c8c20c5a1bb04078ab9adeb5489';
     $mail->setFrom('support@etq-global.com', 'iOrbit');
-    $mail->addAddress('smita.deshpande@iorbit-tech.com', 'Smita Deshpande');
-    // $mail->addAddress('karthikcg26@gmail.com', 'Karthik C G');
+    // $mail->addAddress('smita.deshpande@iorbit-tech.com', 'Smita Deshpande');
+    $mail->addAddress('karthikcg26@gmail.com', 'Karthik C G');
     if (empty($name)) {
         $errors['name'] = 'Name is required.';
     }
